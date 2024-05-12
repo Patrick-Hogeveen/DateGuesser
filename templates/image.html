@@ -1,3 +1,7 @@
-<h1>Question {{.QNum}}</h1>
+<h1>Question {{.QuestionNum}}</h1>
 
-<img src ={{.Path}} >
+<img src =/{{.Path}} >
+<form method="post" action="/questionAns/{{.QuestionNum}}" enctype="multipart/form-data">
+<input type="number" name="year">
+<button class="ripple submit">Submit</button>	
+</form>
